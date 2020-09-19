@@ -77,8 +77,20 @@ public class Demo {
         System.out.println("list.getFirst() = " + list.getFirst());
 
 
-        ArrayList<String> arrayList = new ArrayList<>(50000);
+        ArrayList<String> arrayList = new ArrayList<>(15);
         arrayList.add("1");
+
+        ArrayList<String> appendList = new ArrayList<>(15);
+        appendList.add("a");
+        appendList.add("b");
+        appendList.add("c");
+        appendList.add("d");
+
+        appendList.addAll(arrayList);
+
+        appendList.forEach(System.out::println);
+        System.out.println("appendList.size() = " + appendList.size());
+        System.out.println("arrayList.size() = " + arrayList.size());
 
         int[] original = {57, 81, 65, 43, 21};
         System.out.print("original = {");
