@@ -1,7 +1,21 @@
 package arithmetic.sort;
 
+/**
+ * 冒泡排序
+ */
 public class Bubble {
-    public void sort(int[] arr) {
+    public static void main(String[] args) {
+        int[] arr = {9, 2, 10, 7, 2, 3, 1, 9, 99, 664};
+//        int[] sortArr = sort(arr);
+        sort(arr);
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+        }
+        System.out.println();
+    }
+
+    public static void sort(int[] arr) {
         // 提取数组长度
         int len = arr.length;
 
@@ -22,6 +36,5 @@ public class Bubble {
                 }
             }
         }
-
     }
 }

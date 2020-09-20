@@ -5,6 +5,12 @@ public class Digital {
         int num = 7659;
         revInt(num);
         System.out.println();
+        int[] a = {1, 2, 3, 4, 5};
+        int[] b = revArray(a);
+        for (int i = 0; i < b.length; i++) {
+            System.out.print(b[i]);
+        }
+        System.out.println();
     }
 
     /**
@@ -19,5 +25,18 @@ public class Digital {
             num = num / 10;
         }
         return num;
+    }
+
+    /**
+     * 数组反转。
+     * int[] a = {1, 2, 3, 4, 5};
+     * int[] b = {5, 4, 3, 2, 1};
+     */
+    public static int[] revArray(int[] a) {
+        int[] b = new int[a.length];
+        for (int i = 0; i < a.length; i++) {
+            b[i] = a[a.length - i - 1];
+        }
+        return b;
     }
 }

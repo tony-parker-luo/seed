@@ -1,15 +1,15 @@
 package benchmark;
 
 import java.awt.*;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 
 public class Demo {
+
+    public Demo() throws FileNotFoundException {
+    }
 
     public static void main(String[] args) throws IOException {
        /* int k =7;
@@ -115,5 +115,31 @@ public class Demo {
         System.out.println("}");
         System.out.println("copyOfRange.length = " + copyOfRange.length);
 
+        Demo demo = new Demo();
+        String ps = new String(" Hello ");
+        demo.change2(ps);
+        System.out.println("ps = " + ps);
+
+        int e = 1;
+        int f = 2;
+        int d = 3;
+
+        System.out.println((0 == e || e < f && d > f));
+
+        Double db1obj = Double.valueOf("20");
+        double v = db1obj.doubleValue();
+        System.out.println("v = " + v);
+
+        String java = "java";
+        java = java.concat(java);
+        System.out.println("java = " + java);
+
+        System.out.println(85 >> 1);
     }
+
+    void change2(String ps) {
+        ps = new String("Right");
+    }
+
+    BufferedReader br = new BufferedReader(new FileReader(new File("abc.txt")));
 }
