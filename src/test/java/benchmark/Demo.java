@@ -4,6 +4,7 @@ import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.LinkedList;
 
 public class Demo {
@@ -135,11 +136,14 @@ public class Demo {
         System.out.println("java = " + java);
 
         System.out.println(85 >> 1);
+        System.out.println(demo);
+
+
+
     }
 
     void change2(String ps) {
         ps = new String("Right");
     }
 
-    BufferedReader br = new BufferedReader(new FileReader(new File("abc.txt")));
 }
