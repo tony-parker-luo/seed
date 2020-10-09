@@ -14,6 +14,7 @@
 
 # Package
 /target/*
+/target
 
 # Package Files #
 *.jar
