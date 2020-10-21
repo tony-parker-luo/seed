@@ -1,8 +1,8 @@
 package jvm.chapter2;
 
-import net.sf.cglib.proxy.Enhancer;
+/*import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
-import net.sf.cglib.proxy.MethodProxy;
+import net.sf.cglib.proxy.MethodProxy;*/
 
 import java.lang.reflect.Method;
 
@@ -14,7 +14,7 @@ import java.lang.reflect.Method;
 public class JavaMethodAreaOOM {
 
     public static void main(String[] args) {
-        while (true) {
+     /*   while (true) {
             Enhancer enhancer = new Enhancer();
             enhancer.setSuperclass(OOMObject.class);
             enhancer.setUseCache(false);
@@ -24,7 +24,7 @@ public class JavaMethodAreaOOM {
                 }
             });
             enhancer.create();
-        }
+        }*/
     }
 
     static class OOMObject {

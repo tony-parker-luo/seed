@@ -3,7 +3,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>com.kunlong-luo</groupId>
   <artifactId>seed</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -19,16 +18,52 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <org.apache.httpcomponents.httpclient>4.5.12</org.apache.httpcomponents.httpclient>
+    <org.apache.httpcomponents.httpcore>4.4.13</org.apache.httpcomponents.httpcore>
+    <commons-httpclient.commons-httpclient>3.1</commons-httpclient.commons-httpclient>
     <org.openjdk.jmh.jmh-core>1.21</org.openjdk.jmh.jmh-core>
     <org.openjdk.jmh-generator-annprocess>1.21</org.openjdk.jmh-generator-annprocess>
+    <org.projectlombok.lombok>1.18.16</org.projectlombok.lombok>
+    <com.google.code.gson.gson>2.8.6</com.google.code.gson.gson>
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-httpclient</groupId>
+      <artifactId>commons-httpclient</artifactId>
+      <version>${commons-httpclient.commons-httpclient}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>${com.google.code.gson.gson}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpcore</artifactId>
+      <version>${org.apache.httpcomponents.httpcore}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpmime</artifactId>
+      <version>${org.apache.httpcomponents.httpclient}</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
-      <version>${apache.httpcomponents.httpclient}</version>
+      <version>${org.apache.httpcomponents.httpclient}</version>
     </dependency>
 
     <dependency>
